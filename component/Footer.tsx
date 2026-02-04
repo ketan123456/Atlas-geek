@@ -14,28 +14,44 @@ const Footer = () => {
             <h4 className="footer-title">Cloud Services</h4>
             <ul className="footer-list">
               <li>
-                <Link href="#">Google Cloud Services</Link>
+                <Link href="/cloud-services/google-cloud">
+                  Google Cloud Services
+                </Link>
               </li>
               <li>
-                <Link href="#">Cloud Consulting</Link>
+                <Link href="/cloud-services/cloud-consulting">
+                  Cloud Consulting
+                </Link>
               </li>
               <li>
-                <Link href="#">Cloud Architecture & Migration</Link>
+                <Link href="/cloud-services/migration">
+                  Cloud Architecture & Migration
+                </Link>
               </li>
               <li>
-                <Link href="#">Cloud Cost Optimization</Link>
+                <Link href="/cloud-services/cost-optimization">
+                  Cloud Cost Optimization
+                </Link>
               </li>
               <li>
-                <Link href="#">Managed Cloud Services</Link>
+                <Link href="/cloud-services/managed">
+                  Managed Cloud Services
+                </Link>
               </li>
               <li>
-                <Link href="#">Change Management</Link>
+                <Link href="/cloud-services/change-management">
+                  Change Management
+                </Link>
               </li>
               <li>
-                <Link href="#">Hybrid & Multicloud Services</Link>
+                <Link href="/cloud-services/hybrid-multicloud">
+                  Hybrid & Multicloud Services
+                </Link>
               </li>
               <li>
-                <Link href="#">Location-based Services</Link>
+                <Link href="/cloud-services/location-based">
+                  Location-based Services
+                </Link>
               </li>
             </ul>
           </div>
@@ -44,28 +60,36 @@ const Footer = () => {
             <h4 className="footer-title">Solutions</h4>
             <ul className="footer-list">
               <li>
-                <Link href="#">AI</Link>
+                <Link href="/solutions/ai">AI</Link>
               </li>
               <li>
-                <Link href="#">Cloud Security</Link>
+                <Link href="/solutions/cloud-security">Cloud Security</Link>
               </li>
               <li>
-                <Link href="#">Infrastructure Modernization</Link>
+                <Link href="/solutions/infrastructure">
+                  Infrastructure Modernization
+                </Link>
               </li>
               <li>
-                <Link href="#">Productivity & Collaboration</Link>
+                <Link href="/solutions/productivity-collaboration">
+                  Productivity & Collaboration
+                </Link>
               </li>
               <li>
-                <Link href="#">App Modernization</Link>
+                <Link href="/solutions/app-modernization">
+                  App Modernization
+                </Link>
               </li>
               <li>
-                <Link href="#">Data Analytics</Link>
+                <Link href="/solutions/data-analytics">Data Analytics</Link>
               </li>
               <li>
-                <Link href="#">Cloud Learning Platform</Link>
+                <Link href="/solutions/cloud-learning-platform">
+                  Cloud Learning Platform
+                </Link>
               </li>
               <li>
-                <Link href="#">Solutions Catalog</Link>
+                <Link href="/solutions/catalog">Solutions Catalog</Link>
               </li>
             </ul>
           </div>
@@ -74,20 +98,18 @@ const Footer = () => {
             <h4 className="footer-title">Company</h4>
             <ul className="footer-list">
               <li>
-                <Link href="#">About</Link>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="#">Careers</Link>
+                <Link href="/careers">Careers</Link>
               </li>
               <li>
-                <Link href="#">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </li>
               <li>
-                <Link href="#">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
-              <li>
-                <Link href="#">Partners</Link>
-              </li>
+              
             </ul>
           </div>
         </div>

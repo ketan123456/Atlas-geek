@@ -1,0 +1,19 @@
+.hero-base { overflow: hidden; padding: 50px 20px; }
+footer{width: 100% !important;}
+.hero-section.hero, footer { position: static!important; z-index: 10; }
+.hero-inner { display: flex; flex-direction: column; max-width: 1200px; margin: 0 auto; padding: 0 20px; width: 100%; }
+@media(max-width:767px) {
+  .hero-inner { padding: 0 0; }
+}
+.hero-breadcrumb { font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255, 255, 255, 0.65); }
+.hero-title { margin-top: 24px; font-size: clamp(42px, 5vw, 64px); font-weight: 700; line-height: 1.1; max-width: 720px; color: #fff; }
+.hero-subtitle { margin-top: 20px; font-size: 18px; line-height: 1.6; margin: 0; color: rgba(255, 255, 255, 0.75); max-width: 520px; }
+.hero-actions { margin-top: 40px; display: flex; justify-content: start; gap: 16px; flex-wrap: wrap; }
+.hero-primary-btn { padding: 16px 32px; text-decoration: none; color: #fff; border-radius: 14px; font-weight: 500; font-size: 16px; border: none; cursor: pointer; transition: transform 0.2s ease,box-shadow 0.2s ease; }
+.hero-primary-btn:hover { transform: translateY(-1px); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+.hero-secondary-btn { padding: 14px 32px; border-radius: 14px; text-decoration: none; color: #fff; font-weight: 500; font-size: 16px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.25); backdrop-filter: blur(6px); color: #fff; transition: background 0.2s ease; }
+.hero-secondary-btn:hover { background: rgba(255, 255, 255, 0.15); }
+.hero-cloud { background: radial-gradient(       80% 120% at 100% 50%,       #1a2f63 0,       transparent 60%     ),linear-gradient(       90deg,       #0b132b 0,       #0f1c3f 50%,       #12295a 100%     ); }
+.hero-cloud .hero-primary-btn { background: linear-gradient(90deg, #2f80ed, #56ccf2); }
+.hero-ai { background: radial-gradient(       80% 120% at 100% 50%,       #4a2431 0,       transparent 60%     ),linear-gradient(       90deg,       #0b132b 0,       #1b1b3a 50%,       #2a1b2e 100%     ); }
+.hero-ai .hero-primary-btn { background: linear-gradient(90deg, #f2994a, #eb5757); }

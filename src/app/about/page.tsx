@@ -3,7 +3,15 @@ import LeadershipSection from "../../../component/AboutComponent/LeadershipSecti
 import MissionVisionSection from "../../../component/AboutComponent/MissionVisionSection";
 import StatsSection from "../../../component/AboutComponent/StatsSection";
 import StorySection from "../../../component/AboutComponent/StorySection";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Atlas Geek-About",
+  description: "Latest articles, tutorials, and insights from Atlas Geek.",
+  alternates: {
+    canonical: "/about",
+  },
+};
 const blogPage = () => {
   return (
     <>

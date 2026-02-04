@@ -1,0 +1,24 @@
+.overview-heading { font-size: 32px; font-weight: 700; color: #0f172a; }
+.overview-text { margin-top: 16px; font-size: 16px; line-height: 1.7; color: #475569; max-width: 520px; }
+.benefits-heading { margin-top: 48px; font-size: 24px; font-weight: 600; color: #0f172a; }
+.benefits-grid { margin-top: 24px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 640px) {
+  .benefits-grid { grid-template-columns: 1fr; }
+}
+.benefit-card { display: flex; align-items: center; gap: 12px; padding: 16px 18px; border-radius: 14px; background: #f8fafc; font-size: 15px; color: #0f172a; }
+.benefit-icon { width: 22px; height: 22px; border-radius: 50%; background: #22c55e; color: #fff; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+.overview-section { padding: 96px 24px; background: #fff; }
+.overview-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+/* Responsive */
+@media (max-width: 1024px) {
+  .overview-grid { grid-template-columns: 1fr; gap: 48px; }
+}
+.offer-card { background: #fff; border-radius: 20px; padding: 40px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); }
+.offer-heading { font-size: 24px; font-weight: 600; color: #0f172a; }
+.offer-list { margin-top: 32px; display: flex; flex-direction: column; gap: 28px; }
+.offer-item { display: flex; gap: 16px; }
+.offer-card.overview-cloud .offer-number { border: 2px solid #2563eb; }
+.offer-card.overview-ai .offer-number { border: 2px solid #f2994a; }
+.offer-number { width: 40px; height: 40px; border-radius: 10px; color: #2563eb; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.offer-title { font-size: 16px; font-weight: 600; color: #0f172a; }
+.offer-text { margin-top: 6px; font-size: 15px; line-height: 1.6; color: #475569; }

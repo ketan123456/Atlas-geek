@@ -1,0 +1,29 @@
+/* Wrapper */
+.nf-wrapper { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: radial-gradient(     circle at top,     #fff 0,     #f0f0f0 45%,     #e6e6e6 100%   ); }
+footer, header { display: none; }
+/* Card */
+.nf-card { width: 100%; border-radius: 24px; padding: 60px 20px; background: radial-gradient(     circle at top,     #fff 0,     #f0f0f0 45%,     #e6e6e6 100%   ); text-align: center; }
+/* Liquid container */
+.nf-liquid { display: flex; justify-content: center; gap: 30px; margin-bottom: 30px; }
+/* Liquid digits */
+.nf-digit { font-size: clamp(100px, 22vw, 280px); font-weight: 900; color: #d6d6d6bf; background: linear-gradient(     180deg,     rgba(255, 255, 255, 0.95),     rgba(220, 220, 220, 0.85)   ); -webkit-background-clip: text; background-clip: text; filter: blur(0.3px); position: relative; animation: float 6s ease-in-out infinite; }
+/* Different delays for liquid feel */
+.nf-digit:nth-child(2) { animation-delay: -2s; }
+.nf-digit:nth-child(3) { animation-delay: -4s; }
+/* Liquid movement */
+@keyframes float {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-18px) scale(1.03); }
+  100% { transform: translateY(0) scale(1); }
+}
+/* Text */
+.nf-title { font-size: clamp(22px, 3vw, 32px); font-weight: 600; color: #666; margin-bottom: 6px; }
+.nf-subtitle { font-size: 15px; color: #888; margin-bottom: 28px; }
+/* Button */
+.nf-btn { display: inline-block; padding: 14px 34px; border-radius: 999px; background: #fff; color: #555; font-weight: 600; text-decoration: none; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); transition: transform 0.25s ease,box-shadow 0.25s ease; border: 0; }
+.nf-btn:hover { transform: translateY(-3px); box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2); }
+/* Mobile */
+@media (max-width: 600px) {
+  .nf-liquid { gap: 16px; }
+  .nf-card { padding: 40px 16px; }
+}

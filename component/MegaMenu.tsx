@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface MegaMenuProps {
   title: string;
@@ -11,6 +14,8 @@ interface MegaMenuProps {
 }
 
 const MegaMenu = ({ title, description, links }: MegaMenuProps) => {
+  const pathname = usePathname();
+
   return (
     <div className="mega-menu">
       <div className="mega-container">
@@ -18,19 +23,24 @@ const MegaMenu = ({ title, description, links }: MegaMenuProps) => {
         <div className="mega-intro">
           <h4>{title}</h4>
           <p>{description}</p>
-          <a href="#" className="view-all">
-            View all →
-          </a>
+         
         </div>
 
         {/* Right */}
         <div className="mega-links">
-          {links.map((item) => (
-            <Link key={item.label} href={item.href || "#"}>
-              <strong>{item.label}</strong>
-              <span>{item.description}</span>
-            </Link>
-          ))}
+          {links.map((item) => {
+            const isActive = item.href === pathname;
+
+            return (
+              <Link
+                key={item.label}
+                href={item.href || "#"}
+                className={isActive ? "active" : ""}>
+                <strong>{item.label}</strong>
+                <span>{item.description}</span>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </div>

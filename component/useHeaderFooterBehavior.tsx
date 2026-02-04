@@ -12,11 +12,26 @@ const HeaderFooterLogic = () => {
     const main = document.querySelector("main") as HTMLElement | null;
     const hero = document.querySelector(".hero-section") as HTMLElement | null;
 
-    if (!main) return;
+    // ✅ 1. HANDLE 404 PAGE
+    if (pathname === "/404") {
+      if (header) header.style.display = "none";
+      if (footer) footer.style.display = "none";
+      if (main) {
+        main.style.marginTop = "0";
+        main.style.marginBottom = "0";
+      }
+
+      // ❌ STOP ALL LOGIC
+      return;
+    }
+
+    // ✅ RESET when leaving 404
+    if (header) header.style.display = "";
+    if (footer) footer.style.display = "";
+
+    if (!main || !header || !footer) return;
 
     const handleScroll = () => {
-      if (!header || !footer) return;
-
       const scrollTop = window.scrollY;
       const windowHeight = window.innerHeight;
       const docHeight = document.documentElement.scrollHeight;
@@ -40,7 +55,7 @@ const HeaderFooterLogic = () => {
       }
 
       const heroHeight = hero?.offsetHeight || 0;
-      const footerHeight = footer?.offsetHeight || 0;
+      const footerHeight = footer.offsetHeight || 0;
 
       main.style.marginTop = `calc(${heroHeight}px - 2px)`;
       main.style.marginBottom = `calc(${footerHeight}px - 2px)`;
@@ -66,7 +81,7 @@ const HeaderFooterLogic = () => {
         images[i].removeEventListener("load", rafAdjust);
       }
     };
-  }, [pathname]); 
+  }, [pathname]);
 
   return null;
 };

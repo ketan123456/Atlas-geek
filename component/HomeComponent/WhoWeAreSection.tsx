@@ -1,6 +1,6 @@
 const WhoWeAreSection = () => {
   return (
-    <section className="who-we-are">
+    <section className="who-we-are" id="whoWeAre">
       <div className="who-container">
         <div className="who-content">
           <span className="who-label">
