@@ -1,3 +1,5 @@
+import AnimatedNumber from "../AnimatedNumber";
+
 const PartnerSection = () => {
   return (
     <section className="partner">
@@ -23,7 +25,8 @@ const PartnerSection = () => {
             </li>
             <li className="partner-item">
               <span className="partner-icon">🏆</span>
-              Proven track record with Fortune 500 companies
+              Proven track record with Fortune{" "}
+              <AnimatedNumber value={500}  /> companies
             </li>
             <li className="partner-item">
               <span className="partner-icon">📈</span>
@@ -42,7 +45,9 @@ const PartnerSection = () => {
           <div className="uptime-card">
             <div className="uptime-icon">🖥️</div>
             <div>
-              <strong>99.99% Uptime</strong>
+              <strong>
+                <AnimatedNumber value={99} suffix="%" /> Uptime
+              </strong>
               <p>
                 Guaranteed reliability for your mission-critical applications.
               </p>
