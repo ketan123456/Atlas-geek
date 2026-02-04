@@ -1,7 +1,7 @@
 import React from "react";
-import CareersHero from "../../../component/CareerComponent/CareersHero";
-import OpenPositionsSection from "../../../component/CareerComponent/OpenPositionsSection";
-import WhyWorkSection from "../../../component/CareerComponent/WhyWorkSection";
+import CareersHero from "../../../component/careerComponen/CareersHero";
+import OpenPositionsSection from "../../../component/careerComponen/OpenPositionsSection";
+import WhyWorkSection from "../../../component/careerComponen/WhyWorkSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
