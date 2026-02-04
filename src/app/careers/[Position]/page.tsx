@@ -1,17 +1,24 @@
 "use client";
 
-import { useParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useMemo, useState } from "react";
 import "./apply.css";
 
 export default function CareerApplyPage() {
-  const { slug } = useParams<{ slug: string }>();
+  const pathname = usePathname();
   const [resumeName, setResumeName] = useState("");
 
   const position = useMemo(() => {
+    if (!pathname) return "";
+
+    const slug = pathname.split("/").pop();
     if (!slug) return "";
-    return slugToTitle(slug);
-  }, [slug]);
+
+    return slug
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  }, [pathname]);
 
   return (
     <main className="career">
@@ -90,12 +97,4 @@ export default function CareerApplyPage() {
       </section>
     </main>
   );
-}
-
-/* 🔑 Slug → Human-readable title */
-function slugToTitle(slug: string) {
-  return slug
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
 }
