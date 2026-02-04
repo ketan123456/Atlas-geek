@@ -1,0 +1,194 @@
+footer{
+    position: static;
+    width: 100%;
+}
+/* =========================
+   ROOT / PAGE
+========================= */
+.career {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
+  color: #0f172a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+.career .career__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.career .career__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.career .career__title span {
+  color: #4f46e5;
+}
+
+.career .career__subtitle {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #64748b;
+}
+
+/* =========================
+   CARD
+========================= */
+.career .career__card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+/* =========================
+   FORM
+========================= */
+.career .career__form {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* =========================
+   FORM SECTION
+========================= */
+.career .form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.career .form-section__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* =========================
+   GRID
+========================= */
+.career .form-section__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* =========================
+   FORM FIELD
+========================= */
+.career .form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.career .form-field__label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #64748b;
+}
+
+.career .form-field__input {
+  padding: 12px 14px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.career .form-field__input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+.career .form-field__input[readonly] {
+  background: #f8fafc;
+  cursor: not-allowed;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+.career .form-submit {
+  margin-top: 12px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.career .form-submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(79, 70, 229, 0.35);
+}
+/* =========================
+   RESUME UPLOAD
+========================= */
+.career .resume-upload {
+  display: block;
+  cursor: pointer;
+}
+
+.career .resume-upload input {
+  display: none;
+}
+
+.career .resume-upload__content {
+  border: 2px dashed #c7d2fe;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  background: #f8fafc;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.career .resume-upload:hover .resume-upload__content {
+  border-color: #4f46e5;
+  background: #eef2ff;
+}
+
+.career .resume-upload__icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.career .resume-upload__text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.career .resume-upload__meta {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #64748b;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 640px) {
+  .career .career__title {
+    font-size: 26px;
+  }
+
+  .career .career__form {
+    padding: 20px;
+  }
+
+  .career .form-section__grid {
+    grid-template-columns: 1fr;
+  }
+}
