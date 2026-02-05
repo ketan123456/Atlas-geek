@@ -14,7 +14,7 @@ const googleCloud = () => {
         secondaryButton={{ label: "Explore Other Solutions" }}
       />
       <OverviewOfferSection
-        containerClass="overview-ai"
+        containerClass="overview-cloud"
         overviewTitle="Overview"
         overviewText="As a premier Google Cloud Partner, we help you leverage the full potential of GCP to build scalable, secure, and intelligent applications. From migration to modernization, our experts are with you every step of the way.
 "
@@ -28,7 +28,8 @@ const googleCloud = () => {
         offers={[
           {
             title: "Infrastructure as a Service",
-            description: "Deploy and manage virtual machines with Compute Engine.",
+            description:
+              "Deploy and manage virtual machines with Compute Engine.",
           },
           {
             title: "Big Data & Analytics",
